@@ -11,8 +11,8 @@ st.set_page_config(
 # 1. Cargar los datos desde el archivo CSV proporcionado
 @st.cache_data
 def cargar_datos():
-    # Reemplaza 'Guia medicamentos_pediatricos Sebas01.csv' con la ruta de tu archivo
-    df = pd.read_csv("Guia medicamentos_pediatricos Sebas01.csv", sep=";")
+    # Reemplaza 'Guia_medicamentos_pediatricos_Sebas.csv' con la ruta de tu archivo
+    df = pd.read_csv("Guia_medicamentos_pediatricos_Sebas.csv", sep=";")
     return df
 
 try:
