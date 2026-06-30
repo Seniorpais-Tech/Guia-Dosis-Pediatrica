@@ -12,7 +12,7 @@ st.set_page_config(
 @st.cache_data
 def cargar_datos():
     # Reemplaza 'Guia_medicamentos_pediatricos_Sebas.csv' con la ruta de tu archivo
-    df = pd.read_csv("Guia_medicamentos_pediatricos_Sebas.csv", sep=";")
+    df = pd.read_csv("Guia_medicamentos_pediatricos_Sebas.csv", sep=";", encoding="latin-1")
     return df
 
 try:
