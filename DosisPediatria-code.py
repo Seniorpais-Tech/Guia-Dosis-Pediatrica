@@ -90,6 +90,24 @@ if medicamento_consulta != "Selecciona uno...":
         c2.markdown(f"**Parámetros a Monitorizar:** {ficha['Monitorización']}")
         st.caption(f"**Fuente de Referencia Oficial:** [{ficha['Fuente / URL']}]({ficha['Fuente / URL']})")
         
+    # ==========================================
+    # [FASE 2: PLACEHOLDER PARA CALCULADORA ESTRUCTURADA]
+    # ==========================================
+    # TODO (Fase 2): Descomentar e implementar cuando Guia_medicamentos_pediatricos_Estructurada.csv esté validado.
+    # st.write("---")
+    # st.subheader("🧮 Calculadora de Dosis por Peso (Fase 2)")
+    # peso_paciente = st.number_input("Ingrese el peso del paciente (kg):", min_value=0.5, max_value=150.0, value=10.0, step=0.5)
+    #
+    # # Lógica futura de consumo del contrato de datos:
+    # # if medicamento_tiene_datos_estructurados y requiere_revision_manual == False:
+    # #     dosis_min_calc = peso_paciente * ficha_estructurada['dosis_min_mg_kg']
+    # #     if excede_guardrail(dosis_min_calc, ficha_estructurada['dosis_max_absoluta_mg_dia']):
+    # #         st.error("⚠️ La dosis calculada excede el límite máximo de seguridad.")
+    # #     else:
+    # #         st.success(f"Administrar: {dosis_min_calc} mg cada {ficha_estructurada['frecuencia_min_horas']} h.")
+    # # else:
+    # #     st.warning("Calculadora automática pendiente de validación clínica para este fármaco. Utilice la referencia textual arriba.")
+        
 st.write("---")
 
 
